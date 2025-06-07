@@ -112,7 +112,7 @@ jobs:
         name: Run Hugo
         uses: crazy-max/ghaction-hugo@v3
         with:
-          version: "0.147.7"
+          version: "v0.146.6"
           extended: true
           args: --cleanDestinationDir --minify --verbose
       -
