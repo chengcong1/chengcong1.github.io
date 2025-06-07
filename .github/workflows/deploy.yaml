@@ -1,0 +1,68 @@
+name: Deploy Hugo site to Pages
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+defaults:
+  run:
+    shell: bash
+env:
+  NAME: BLOG_push
+  # 推送目标仓库 格式 用户名/仓库名
+  TARGET_REPOSITORY_NAME: chengcong1/chengcong1.github.io
+  # 同步临时目录(可选)
+  CLONE_DIR: tmp_public
+  # 构建临时目录(可选)
+  BUILD_DIR: tmp_build
+  # 配置git用户名
+  GIT_USERNAME: chengcong1
+
+
+jobs:
+  # This workflow contains a single job called "build"
+  build:    
+    runs-on: ubuntu-latest
+    env:
+      HUGO_VERSION: 0.117.0    
+    steps:
+      - name: Install Hugo CLI
+        run: |
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+      - uses: actions/checkout@v3
+      - name: Build with Hugo
+        env:
+          # For maximum backward compatibility with Hugo modules
+          HUGO_ENVIRONMENT: production
+          HUGO_ENV: production
+        run: |
+          hugo \
+            --minify \
+            --baseURL "${{ steps.pages.outputs.base_url }}/" \
+            -d ${{ env.BUILD_DIR }}
+      
+      - name: Git Config
+        run: |
+          git config --global user.email "actions-push-noreply@baicai.me"
+          git config --global user.name "${{ env.GIT_USERNAME }}"
+          echo "配置git完成"
+
+      - name: Git clone
+        run: |
+          echo "同步目标仓库(开始)"
+          git clone --depth 1 https://github.com/${{ env.TARGET_REPOSITORY_NAME }}.git ${{ env.CLONE_DIR }} &> /dev/null
+          echo "同步目标仓库(完成)"
+
+      - name: Git push
+        run: |
+          cp -rf ${{ env.BUILD_DIR }}/*  ${{ env.CLONE_DIR }}/
+          cd ${{ env.CLONE_DIR }}
+          echo "${{ github.event.head_commit.message }} `date +%FT%T%z`" > _pub_time.html         
+          git add .
+          git commit --message "Update ${{ env.NAME }} from ${{ env.TARGET_REPOSITORY_NAME }} ${{ github.event.head_commit.message }}"
+          git push -f -q https://oauth2:${{ secrets.GIT_TOKEN }}@github.com/${{ env.TARGET_REPOSITORY_NAME }}.git main
+          echo  "git push  ${{ env.TARGET_REPOSITORY_NAME }} (完成)"
