@@ -197,9 +197,9 @@ Hugo中如何在markdown中增加文章的内链：https://macgeeker.com/hugo/hu
 ```
 
 ```markdown
-[Chinese Test]({{ < ref "\post\temp\chinese-test\Chinese Test.md" >}})
+[Chinese Test]({{< ref "\post\temp\chinese-test\Chinese Test.md" >}})
 
-<a class="link" target="_blank" href={{ < ref "\post\temp\chinese-test\ChineseTest.md" >}} >Chinese Test</a>
+<a class="link" target="_blank" href={{< ref "\post\temp\chinese-test\ChineseTest.md" >}} >Chinese Test</a>
 
 <!-- 以上方式本地能运行github action发生错误。 -->
 ```
