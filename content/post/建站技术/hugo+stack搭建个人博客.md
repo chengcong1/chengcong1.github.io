@@ -12,6 +12,8 @@ draft: false # 草稿
 
 ## 安装hugo
 
+官方文档：https://hugo.opendocs.io/getting-started
+
 二进制安装：[https://github.com/gohugoio/hugo/releases](https://github.com/gohugoio/hugo/releases) 下载完成后解压hugo.exe并添加到环境变量中
 
 其他安装方式：
@@ -45,6 +47,12 @@ hugo server
 本地访问：http://localhost:1313
 
 ## 配置stack主题
+
+主题：https://themes.gohugo.io/themes/hugo-theme-stack/
+demo：https://demo.stack.jimmycai.com/
+Docs：https://stack.jimmycai.com/guide/getting-started
+      https://stack-docs.netlify.app/zh/getting-started
+github：https://github.com/CaiJimmy/hugo-theme-stack
 
 复制模板配置文件：`MyBlog\themes\hugo-theme-stack\exampleSite\hugo.yaml` 到 `MyBlog\hugo.yaml`
 复制模板内容文件夹： `MyBlog\themes\hugo-theme-stack\exampleSite\content` 到 `MyBlog\content`
@@ -185,8 +193,11 @@ tags: 表示标签
 多语言：页面新建index.md 默认是中文则是中文，英文则英文，另新建index.zh-cn.md或index.en.md 则表示中文或英文，同时存在index.zh-cn.md或index.en.md多个语言时，文章会显示翻译到另一个语言。
 
 文件名：不是必须index.md 或者 index.en.md，hugo+stack搭建个人博客.md 以及 hugo+stack搭建个人博客.en.md也可以
+
+目录：stack 一级标题不显示，从二级标题开始生成目录？。
+
 ### 文章间跳转
-Hugo中如何在markdown中增加文章的内链：https://macgeeker.com/hugo/hugo-rel/
+Hugo中如何在markdown中增加文章的内链：[https://macgeeker.com/hugo/hugo-rel/](https://macgeeker.com/hugo/hugo-rel)
 
 自定义的shortcode：
 ```
@@ -195,19 +206,25 @@ Hugo中如何在markdown中增加文章的内链：https://macgeeker.com/hugo/hu
 # 在markdown中引用，注意"{{"与"<"之间使用时没有空格
 {{ < xrelref "01-append-icon.md"  > }}
 ```
+以下方式本地能运行，但是github action发生错误。
+```
+[Chinese Test] ({{ < ref "\post\temp\chinese-test\ChineseTest.md" >}})
 
-```markdown
-[Chinese Test]({{< ref "\post\temp\chinese-test\ChineseTest.md" >}})
-
-<a class="link" target="_blank" href={{< ref "\post\temp\chinese-test\ChineseTest.md" >}} >ChineseTest</a>
-
-<!-- 以上方式本地能运行github action发生错误。 -->
+<a class="link" target="_blank" href={{ < ref "\post\temp\chinese-test\ChineseTest.md" >}} >ChineseTest</a>
 ```
 
-[Chinese Test1](/p/test-chinese/)
+最后选择以下方式：
+```
+# marrkdown语法，但是需要手动写url，url要写对
+[Chinese Test1](/p/test-chinese/#引用)
+# html语法，增加了target="_blank"可以跳转到新的页面
+<a class="link" target="_blank" href="/p/test-chinese/#引用">ChineseTest</a>
+# md文件名需写正确，不然没有输出，也不能跳转到文章的指定标题
+{{ < xrelref "ChineseTest.md"  >}}
+```
+跳转测试：
+{{< xrelref "ChineseTest.md"  >}}
 
-
-{{< xrelref "Chinese Test.md"  >}}
 
 ## 其他警告或错误
 
@@ -233,12 +250,18 @@ WARN  Archives page not found. Create a page with layout: archives.
 需要一个TOKEN
 
 ## 参考文档
-
-hugo：https://gohugo.io/documentation/
+写的可能不是很清晰，请参考如下文章。
 
 GitHub Action: The process ‘/usr/bin/git‘ failed with exit code 128 解决方案：https://blog.csdn.net/nxg0916/article/details/129063959
 
-【教程】Hugo+Github博客部署：https://sazerac-kk.github.io/p/%E6%95%99%E7%A8%8Bhugo-github%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2/
+【教程】Hugo+Github博客部署：https://sazerac-kk.github.io/p/%E6%95%99%E7%A8%8Bhugo-github%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2
 
 Hugo GitHub Actio：https://github.com/marketplace/actions/hugo-github-action
 
+建站技术 | 使用 Hugo+Stack 简单搭建一个博客：https://blog.reincarnatey.net/2023/build-hugo-blog-with-stack-mod
+
+使用hugo stack主题快速搭建博客：https://www.liuhouliang.com/post/hugo_theme
+
+建站指南-Stack主题：https://site.zhelper.net/Hugo/hugo-stack
+
+用 Hugo 重新搭建博客：https://zhajiman.github.io/post/rebuild_blog/
