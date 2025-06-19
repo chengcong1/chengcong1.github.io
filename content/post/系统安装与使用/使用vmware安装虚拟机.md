@@ -10,8 +10,6 @@ categories:
 draft: true # 草稿
 ---
 
-## 不好使请忽略本文章
-
 ## 安装vmware
 以前安装虚拟机都是使用Oracle VirtualBox，因为免费，现在Vmware Workstation被博通收购后个人也免费使用了。
 官网：https://www.vmware.com/
@@ -34,9 +32,10 @@ win 11官网下载：[Download Windows 11](https://www.microsoft.com/zh-cn/softw
 itellyou下载：https://next.itellyou.cn/Original/Index
 ### 虚拟机安装
 [在VMware® Workstation 17 Pro虚拟机上安装Windows 11操作系统](https://www.cnblogs.com/chuangblog/p/17654331.html)
+
 ### 遇到的问题
 #### 此平台不支持虚拟化的 amd-v/rvi
-控制面板---程序---启用或关闭Windows功能，然后将所有关于Hyper-V的功能，重启电脑
+关闭VBS：应用商店下载`Wintoys`：Wintoys--Performance--VBS(virtualization-based-security)--关闭--重启电脑
 
 
 

@@ -16,10 +16,10 @@ VS Code下载地址：https://code.visualstudio.com/download
 ## 插件
 插件下载地址：https://marketplace.visualstudio.com/
 ### 常用插件
-- Chinese (Simplified) (简体中文)：ms-ceintl.vscode-language-pack-zh-hans
-    适用于 VS Code 的中文（简体）语言包
-- Error Lens：usernamehw.errorlens
-    将错误信息显示在代码行后面
+- Chinese (Simplified) (简体中文)：适用于 VS Code 的中文（简体）语言包
+- Error Lens：将错误信息显示在代码行后面
+- Even Better TOML：TOML 配置文件语法高亮
+
 
 ### 远程开发
 - Remote - SSH
@@ -38,7 +38,17 @@ VS Code下载地址：https://code.visualstudio.com/download
 
 ### AI写代码
 - Cline：AI助手
+- Cline-Chinese：Cline中文汉化版
 - CodeBuddy：腾讯云自研的一款开发编程提效辅助工具
+
+## 配置
+### 禁用更新
+禁用扩展更新：
+设置--用户--功能--扩展--Auto Check Updates(适用于所有配置文件)--取消勾选
+设置--用户--功能--扩展--Auto Update(适用于所有配置文件)--取消勾选
+
+禁用VS Code更新：
+设置--用户--应用程序--启用在windows上后台下载和安装新的VS Code版本--取消勾选
 
 ## 基于VS Code的其他编辑器
 ### Lingma IDE
@@ -47,7 +57,7 @@ Lingma IDE 是基于 VS Code 开源版本构建的智能代码编辑器，全面
 目前登陆后免费使用
 ### VSCodium
 VSCodium 是微软流行的 Visual Studio Code 编辑器的一个分支。它与 VS Code 完全相同，唯一不同的是，VSCodium 不跟踪你的使用数据。
-VSCodium不能使用`Remote - SSH`插件
+VSCodium不能使用微软的`Remote - SSH`插件
 ### Cursor
 Cursor是一款AI 代码编辑器。
 试用过后收费
