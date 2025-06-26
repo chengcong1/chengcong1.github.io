@@ -13,6 +13,18 @@ links:
     description: 猫与茶与代码与你：一位 编程 / 设计 / ACGN 爱好者的博客。
     website: https://blog.reincarnatey.net/
     image: https://npm.elemecdn.com/@mitr-yuzr/vno-dmego-yuzr@latest/assets/img/headimg.png
+  - title: 橘子的小站
+    description: 橘子的小站
+    website: https://lavender-z.github.io/
+    image: https://lavender-z.github.io/img/avatar.jpg
+  - title: iNana
+    description: iNana
+    website: https://inana.top/
+    image: https://inana.top/static/theme/main/images/logo.gif
+  - title: ifixit
+    description: 探索维修世界
+    website: https://zh.ifixit.com/
+    image: https://guide-images.cdn.ifixit.com/igi/fqOwLIXJtQYvBYrh.thumbnail
 menu:
     main: 
         weight: -50
