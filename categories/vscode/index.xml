@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Vscode on 魔力の博客</title><link>https://chengcong1.github.io/categories/vscode/</link><description>Recent content in Vscode on 魔力の博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Mon, 16 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://chengcong1.github.io/categories/vscode/index.xml" rel="self" type="application/rss+xml"/><item><title>VS Code上手体验</title><link>https://chengcong1.github.io/p/use_vscode/</link><pubDate>Mon, 16 Jun 2025 00:00:00 +0000</pubDate><guid>https://chengcong1.github.io/p/use_vscode/</guid><description>&lt;h2 id="介绍">介绍
+&lt;/h2>&lt;p>VS Code是一款开源的代码编辑器，基于Electron 框架构建，支持Windows、MacOS和Linux。
+VS Code 开源地址：https://github.com/microsoft/vscode&lt;/p>
+&lt;h2 id="安装">安装
+&lt;/h2>&lt;p>VS Code下载地址：https://code.visualstudio.com/download&lt;/p>
+&lt;h2 id="插件">插件
+&lt;/h2>&lt;p>插件下载地址：https://marketplace.visualstudio.com/&lt;/p>
+&lt;h3 id="常用插件">常用插件
+&lt;/h3>&lt;ul>
+&lt;li>Chinese (Simplified) (简体中文)：适用于 VS Code 的中文（简体）语言包&lt;/li>
+&lt;li>Error Lens：将错误信息显示在代码行后面&lt;/li>
+&lt;li>Even Better TOML：TOML 配置文件语法高亮&lt;/li>
+&lt;/ul>
+&lt;h3 id="远程开发">远程开发
+&lt;/h3>&lt;ul>
+&lt;li>Remote - SSH
+依赖：&lt;code>Remote - SSH: Editing Configuration Files&lt;/code>、&lt;code>Remote Explorer&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h3 id="golang环境">golang环境
+&lt;/h3>&lt;ul>
+&lt;li>Go：golang.go&lt;/li>
+&lt;/ul>
+&lt;h3 id="vue3环境">vue3环境
+&lt;/h3>&lt;h3 id="代码补全">代码补全
+&lt;/h3>&lt;ul>
+&lt;li>Lingma - Alibaba Cloud AI Coding Assistant：阿里云提供的智能编码辅助工具，提供 代码智能生成、智能问答、多文件修改、编程智能体 等能力&lt;/li>
+&lt;li>GitHub Copilot：微软提供&lt;/li>
+&lt;li>Comate BaiduComate：文心快码，百度提供&lt;/li>
+&lt;/ul>
+&lt;h3 id="ai写代码">AI写代码
+&lt;/h3>&lt;ul>
+&lt;li>Cline：AI助手&lt;/li>
+&lt;li>Cline-Chinese：Cline中文汉化版&lt;/li>
+&lt;li>CodeBuddy：腾讯云自研的一款开发编程提效辅助工具&lt;/li>
+&lt;/ul>
+&lt;h2 id="配置">配置
+&lt;/h2>&lt;h3 id="禁用更新">禁用更新
+&lt;/h3>&lt;p>禁用扩展更新：
+设置&amp;ndash;用户&amp;ndash;功能&amp;ndash;扩展&amp;ndash;Auto Check Updates(适用于所有配置文件)&amp;ndash;取消勾选
+设置&amp;ndash;用户&amp;ndash;功能&amp;ndash;扩展&amp;ndash;Auto Update(适用于所有配置文件)&amp;ndash;取消勾选&lt;/p>
+&lt;p>禁用VS Code更新：
+设置&amp;ndash;用户&amp;ndash;应用程序&amp;ndash;启用在windows上后台下载和安装新的VS Code版本&amp;ndash;取消勾选&lt;/p>
+&lt;h2 id="基于vs-code的其他编辑器">基于VS Code的其他编辑器
+&lt;/h2>&lt;h3 id="lingma-ide">Lingma IDE
+&lt;/h3>&lt;p>Lingma IDE 是基于 VS Code 开源版本构建的智能代码编辑器，全面集成智能编码助手的能力，开箱即用更简单，无需安装插件即可享受高效、智能的编程体验。
+下载地址：https://lingma.aliyun.com/download
+目前登陆后免费使用&lt;/p>
+&lt;h3 id="vscodium">VSCodium
+&lt;/h3>&lt;p>VSCodium 是微软流行的 Visual Studio Code 编辑器的一个分支。它与 VS Code 完全相同，唯一不同的是，VSCodium 不跟踪你的使用数据。
+VSCodium不能使用微软的&lt;code>Remote - SSH&lt;/code>插件&lt;/p>
+&lt;h3 id="cursor">Cursor
+&lt;/h3>&lt;p>Cursor是一款AI 代码编辑器。
+试用过后收费&lt;/p>
+&lt;h3 id="comate">Comate
+&lt;/h3>&lt;p>百度IDE&lt;/p></description></item></channel></rss>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Switch on 魔力の博客</title><link>https://chengcong1.github.io/categories/switch/</link><description>Recent content in Switch on 魔力の博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Fri, 29 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://chengcong1.github.io/categories/switch/index.xml" rel="self" type="application/rss+xml"/><item><title>switch模拟器</title><link>https://chengcong1.github.io/p/switch/</link><pubDate>Fri, 29 Aug 2025 00:00:00 +0000</pubDate><guid>https://chengcong1.github.io/p/switch/</guid><description>&lt;h2 id="模拟器下载">模拟器下载
+&lt;/h2>&lt;p>&lt;del>已过时：&lt;/del>
+&lt;del>suyu github：https://github.com/suyu-emu/suyu&lt;/del>&lt;/p>
+&lt;p>&lt;del>sudachi github：https://github.com/sudachi-emu/sudachi&lt;/del>&lt;/p>
+&lt;p>&lt;del>Ryujinx github：https://github.com/Ryujinx/Ryujinx(不含移动版)&lt;/del>&lt;/p>
+&lt;p>&lt;del>Ryujinx系列：Ryujinx已停止开发&lt;/del>&lt;/p>
+&lt;p>&lt;del>suyu系列：suyu、sudachi已经停止了，目前还有torzu存在&lt;/del>&lt;/p>
+&lt;h3 id="torzu">torzu
+&lt;/h3>&lt;p>镜像：https://notabug.org/litucks/torzu 只是代码镜像可能会停用&lt;/p>
+&lt;p>torzu开发者不会提供编译好的二进制程序，而是需要自行编译，好在github上有人已编译的&lt;/p>
+&lt;p>&lt;del>地址1：https://github.com/leonewton253/torzu&lt;/del>&lt;/p>
+&lt;p>地址2：https://github.com/ong19th/Torzu&lt;/p>
+&lt;h2 id="秘钥与固件">秘钥与固件
+&lt;/h2>&lt;h3 id="下载">下载
+&lt;/h3>&lt;p>Prodkeys官网：https://prodkeys.net/&lt;/p>
+&lt;p>Yuzu Emu：https://emuyuzu.com/yuzu-prod-keys/&lt;/p>
+&lt;p>固件下载1：https://github.com/THZoria/NX_Firmware/releases/&lt;/p>
+&lt;p>固件下载2：https://www.gamer520.com/61541.html&lt;/p>
+&lt;p>固件安装：https://prodkeys.net/yuzu-firmware-v3/&lt;/p>
+&lt;h3 id="安装">安装
+&lt;/h3>&lt;p>修改yuzu文件夹路径：
+启动yuzu-文件-打开yuzu文件夹(默认为C:\Users{{用户名}}\AppData\Roaming\yuzu)-将yuzu目录复制到yuzu.exe同级目录下并修改名称为user-关闭yuzu-删除\AppData\Roaming\yuzu 文件夹。&lt;/p>
+&lt;p>固件目录：固件解压后放在 nand\system\Contents\registered\ 目录下&lt;/p>
+&lt;p>密钥目录：密钥prod.keys、title.keys放在keys目录下&lt;/p>
+&lt;p>完成后验证： 工具-验证已安装内容的完整性。&lt;/p>
+&lt;h2 id="萝卜驱动">萝卜驱动
+&lt;/h2>&lt;p>Mesa Turnip 驱动下载(安卓)&lt;/p>
+&lt;p>github：https://github.com/K11MCH1/AdrenoToolsDrivers/releases&lt;/p>
+&lt;h2 id="依赖安装">依赖安装
+&lt;/h2>&lt;p>windows：VC++&lt;/p>
+&lt;h2 id="运行游戏">运行游戏
+&lt;/h2>&lt;h3 id="游戏下载">游戏下载
+&lt;/h3>&lt;p>gamer520：https://www.gamer520.com/&lt;/p>
+&lt;h3 id="补丁安装">补丁安装
+&lt;/h3>&lt;p>补丁下载：
+&lt;a class="link" href="https://github.com/yuzu-mirror/yuzu-mod-archive" target="_blank" rel="noopener"
+>https://github.com/yuzu-mirror/yuzu-mod-archive&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://github.com/amakvana/SwitchEmuModDownloader" target="_blank" rel="noopener"
+>https://github.com/amakvana/SwitchEmuModDownloader&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://github.com/StevensND/switch-port-mods" target="_blank" rel="noopener"
+>https://github.com/StevensND/switch-port-mods&lt;/a>&lt;/p>
+&lt;h3 id="模拟器设置">模拟器设置
+&lt;/h3>&lt;h2 id="参考链接">参考链接
+&lt;/h2>&lt;p>yuzu模拟器安装使用教程(持续更新)：https://www.bilibili.com/read/cv15405863/&lt;/p>
+&lt;h2 id="如何编译torzu">如何编译torzu
+&lt;/h2>&lt;h3 id="build-for-windows">build-for-windows
+&lt;/h3>&lt;p>&lt;a class="link" href="https://notabug.org/litucks/torzu/src/master/build-for-windows.md" target="_blank" rel="noopener"
+>https://notabug.org/litucks/torzu/src/master/build-for-windows.md&lt;/a>&lt;/p>
+&lt;p>需要：&lt;/p>
+&lt;p>Visual Studio Community 2022：https://visualstudio.microsoft.com/zh-hans/downloads/&lt;/p>
+&lt;p>CMake：https://cmake.org/download/&lt;/p>
+&lt;p>Vulkan SDK：https://vulkan.lunarg.com/sdk/home#windows&lt;/p>
+&lt;p>Python：https://www.python.org/downloads/windows/&lt;/p>
+&lt;p>Git for Windows：https://gitforwindows.org/ When installing Git, include it in your system PATH by choosing the &amp;ldquo;Git from the command line and also from 3rd-party software&amp;rdquo; option.
+安装Git for Windows时选 &amp;ldquo;Git from the command line and also from 3rd-party software&amp;rdquo;&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># from Notabug repo&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git clone --depth &lt;span class="m">1&lt;/span> https://notabug.org/litucks/torzu.git
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># git -c http.proxy=socks5h://127.0.0.1:9050 clone --depth 1 http://vub63vv26q6v27xzv2dtcd25xumubshogm67yrpaz2rculqxs7jlfqad.onion/torzu-emu/torzu.git&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cd&lt;/span> torzu
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 下载子模块，这一步也比较重要&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git submodule update --init --recursive
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">mkdir build
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cd&lt;/span> build
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">cmake .. -G &lt;span class="s2">&amp;#34;Visual Studio 17 2022&amp;#34;&lt;/span> -A x64 -DYUZU_TESTS&lt;span class="o">=&lt;/span>OFF
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 这一步经常会遇到错误，可以更换稍微旧点的cmake版本重试，部分包没下载好，请多次重试并有耐心。&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">cmake --build . --config Release
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>编译完成后可在build/bin/Release目录下找到&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cd&lt;/span> bin
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cd&lt;/span> Release
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">mkdir user
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="debian12编译安卓apk">debian12+编译安卓apk
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-gdscript3" data-lang="gdscript3">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 源码&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">git&lt;/span> &lt;span class="n">clone&lt;/span> &lt;span class="o">--&lt;/span>&lt;span class="n">depth&lt;/span> &lt;span class="mi">1&lt;/span> &lt;span class="o">--&lt;/span>&lt;span class="n">recursive&lt;/span> &lt;span class="n">https&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="o">//&lt;/span>&lt;span class="n">notabug&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">org&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">litucks&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">torzu&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">git&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">cd&lt;/span> &lt;span class="n">torzu&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">git&lt;/span> &lt;span class="n">submodule&lt;/span> &lt;span class="n">update&lt;/span> &lt;span class="o">--&lt;/span>&lt;span class="n">init&lt;/span> &lt;span class="o">--&lt;/span>&lt;span class="n">recursive&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 依赖&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">sudo&lt;/span> &lt;span class="n">apt&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">get&lt;/span> &lt;span class="n">update&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">sudo&lt;/span> &lt;span class="n">apt&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">get&lt;/span> &lt;span class="n">install&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="n">y&lt;/span> &lt;span class="n">sdkmanager&lt;/span> &lt;span class="n">openjdk&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">17&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">jdk&lt;/span> &lt;span class="n">build&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">essential&lt;/span> &lt;span class="n">curl&lt;/span> &lt;span class="n">git&lt;/span> &lt;span class="n">pkg&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">config&lt;/span> &lt;span class="n">glslang&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">tools&lt;/span> &lt;span class="n">zip&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">sudo&lt;/span> &lt;span class="n">sdkmanager&lt;/span> &lt;span class="s2">&amp;#34;ndk;26.3.11579264&amp;#34;&lt;/span> &lt;span class="s2">&amp;#34;platforms;android-34&amp;#34;&lt;/span> &lt;span class="s2">&amp;#34;build-tools;34.0.0&amp;#34;&lt;/span> &lt;span class="s2">&amp;#34;cmake;3.22.1&amp;#34;&lt;/span> &lt;span class="s2">&amp;#34;platform-tools;34.0.5&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">sudo&lt;/span> &lt;span class="n">update&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">alternatives&lt;/span> &lt;span class="o">--&lt;/span>&lt;span class="n">config&lt;/span> &lt;span class="n">java&lt;/span> &lt;span class="c1"># Select Java 17 here if possible&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 构建&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">./&lt;/span>&lt;span class="n">externals&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">vcpkg&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">bootstrap&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">vcpkg&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">sh&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="n">disableMetrics&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">export&lt;/span> &lt;span class="n">ANDROID_HOME&lt;/span>&lt;span class="o">=/&lt;/span>&lt;span class="n">opt&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">android&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">sdk&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">cd&lt;/span> &lt;span class="n">src&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">android&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">./&lt;/span>&lt;span class="n">gradlew&lt;/span> &lt;span class="n">assembleRelease&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>APK 将位于src/android/app/build/outputs/apk/mainline/release/app-mainline-release.apk
+Mesa Turnip driver ：https://github.com/K11MCH1/AdrenoToolsDrivers/releases
+sudo sdkmanager 安装的工具或SDK可以在 &lt;code>/usr/lib/android-sdk&lt;/code> (ubuntu)下找找看。
+这里编译失败了。&lt;/p>
+&lt;h2 id="更新">更新
+&lt;/h2>&lt;p>2025年1月11日：&lt;/p></description></item></channel></rss>
