@@ -9,29 +9,36 @@ draft: false # 草稿
 ---
 
 ## 模拟器下载
-~~**suyu**~~
-~~官网：https://suyu.dev/~~
-~~github：https://github.com/suyu-emu/suyu~~
-~~**sudachi**~~
-github：https://github.com/sudachi-emu/sudachi/
-**Ryujinx**~~
-官网：https://ryujinx.org/
-github：https://github.com/Ryujinx/Ryujinx
-~~(不含移动版)~~
-suyu系列：suyu、sudachi已经停止了，目前还有torzu存在
+~~已过时：
+suyu github：https://github.com/suyu-emu/suyu
+
+sudachi github：https://github.com/sudachi-emu/sudachi
+
+Ryujinx github：https://github.com/Ryujinx/Ryujinx(不含移动版)
+
 Ryujinx系列：Ryujinx已停止开发
+
+suyu系列：suyu、sudachi已经停止了，目前还有torzu存在~~
+
 ### torzu
 镜像：https://notabug.org/litucks/torzu 只是代码镜像可能会停用
+
 torzu开发者不会提供编译好的二进制程序，而是需要自行编译，好在github上有人已编译的
+
 ~~地址1：https://github.com/leonewton253/torzu~~
+
 地址2：https://github.com/ong19th/Torzu
 
 ## 秘钥与固件
 ### 下载
 Prodkeys官网：https://prodkeys.net/
+
 Yuzu Emu：https://emuyuzu.com/yuzu-prod-keys/
+
 固件下载1：https://github.com/THZoria/NX_Firmware/releases/
+
 固件下载2：https://www.gamer520.com/61541.html
+
 固件安装：https://prodkeys.net/yuzu-firmware-v3/
 ### 安装
 修改yuzu文件夹路径：
@@ -44,6 +51,7 @@ Yuzu Emu：https://emuyuzu.com/yuzu-prod-keys/
 完成后验证： 工具-验证已安装内容的完整性。
 ## 萝卜驱动
 Mesa Turnip 驱动下载(安卓)
+
 github：https://github.com/K11MCH1/AdrenoToolsDrivers/releases
 ## 依赖安装
 windows：VC++
@@ -54,7 +62,9 @@ gamer520：https://www.gamer520.com/
 ### 补丁安装
 补丁下载：
 https://github.com/yuzu-mirror/yuzu-mod-archive
+
 https://github.com/amakvana/SwitchEmuModDownloader
+
 https://github.com/StevensND/switch-port-mods
 ### 模拟器设置
 
@@ -64,11 +74,17 @@ yuzu模拟器安装使用教程(持续更新)：https://www.bilibili.com/read/cv
 ## 如何编译torzu
 ### build-for-windows
 https://notabug.org/litucks/torzu/src/master/build-for-windows.md
+
 需要：
+
 Visual Studio Community 2022：https://visualstudio.microsoft.com/zh-hans/downloads/
+
 CMake：https://cmake.org/download/
+
 Vulkan SDK：https://vulkan.lunarg.com/sdk/home#windows
+
 Python：https://www.python.org/downloads/windows/
+
 Git for Windows：https://gitforwindows.org/ When installing Git, include it in your system PATH by choosing the "Git from the command line and also from 3rd-party software" option.
 安装Git for Windows时选 "Git from the command line and also from 3rd-party software"
 ```shell
@@ -114,4 +130,5 @@ sudo sdkmanager 安装的工具或SDK可以在 `/usr/lib/android-sdk` (ubuntu)�
 
 
 ## 更新
+
 2025年1月11日：
