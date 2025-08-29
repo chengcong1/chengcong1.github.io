@@ -34,7 +34,7 @@ VS Code下载地址：https://code.visualstudio.com/download
 ### 代码补全
 - Lingma - Alibaba Cloud AI Coding Assistant：阿里云提供的智能编码辅助工具，提供 代码智能生成、智能问答、多文件修改、编程智能体 等能力
 - GitHub Copilot：微软提供
--
+- Comate BaiduComate：文心快码，百度提供
 
 ### AI写代码
 - Cline：AI助手
@@ -61,3 +61,5 @@ VSCodium不能使用微软的`Remote - SSH`插件
 ### Cursor
 Cursor是一款AI 代码编辑器。
 试用过后收费
+### Comate
+百度IDE

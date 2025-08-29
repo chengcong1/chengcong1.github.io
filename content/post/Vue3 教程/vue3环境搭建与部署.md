@@ -13,8 +13,11 @@ draft: false # 草稿
 ## vue3环境搭建
 ### 安装node.js
 需要安装18.3或更高版本的 Node.js
-windows安装：https://nodejs.cn/download/
+
+windows安装：https://nodejs.cn/download
+
 debian 安装：`sudo apt install nodejs npm`(仅尝试)
+
 检查安装：`node -v`
 ## 创建一个 Vue 应用
 vite + vue3 + typescript
@@ -92,6 +95,7 @@ Router.NoRoute(func(c *gin.Context) {
 ### 使用embed嵌入资源文件
 #### gin+vue
 请访问：[go embed 实现gin + vue静态资源嵌入](https://blog.csdn.net/u010280075/article/details/130872405)
+
 如果将dist目录放到public目录下：
 ```
 # server/public.go
@@ -200,6 +204,44 @@ func EmbedFolder(fsEmbed embed.FS, targetPath string) ServeFileSystem {
 }
 ```
 
-相关链接：
+# 相关链接：
 
 Gin + embed+vue3打包项目：https://milu.ink/382.html
+
+推荐Github上15个学习Vue3开源项目：https://juejin.cn/post/7198412948494139448
+
+
+
+组件库：
+ArcoDesign：字节跳动团队开源的企业级产品设计系统，包含一套Vue3/React UI 组件库
+
+
+# vue + go的相关项目：
+gin-vue-admin：Gin + Vue
+github：https://github.com/flipped-aurora/gin-vue-admin
+demo：https://demo.gin-vue-admin.com/#/layout/dashboard
+
+GoFlyAdmin：Gin + Vue + ArcoDesign
+gitee：https://gitee.com/huang_li_shi_admin/GoFlyAdmin
+github：https://github.com/huanglishi/GoFlyAdmin
+demo开源版：https://sg.goflys.cn/webadmin
+
+weave：
+Github：https://github.com/qingwave/weave
+demo：https://qingwave.github.io/weave/index
+
+go-admin-team/go-admin：
+Github：https://github.com/go-admin-team/go-admin
+
+vue-vben-admin：
+Github：https://github.com/vbenjs/vue-vben-admin
+demo：https://www.vben.pro/
+
+
+
+
+blockcheDev/blog-web：博客项目
+github：https://github.com/blockcheDev/blog-web
+地址：https://www.hitori.cn
+
+
