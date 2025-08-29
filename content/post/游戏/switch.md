@@ -1,6 +1,6 @@
 ---
-title: switch
-description: switch
+title: switch模拟器
+description: switch模拟器使用
 date: 2025-08-29
 slug: switch
 categories:
@@ -9,16 +9,16 @@ draft: false # 草稿
 ---
 
 ## 模拟器下载
-~~已过时：
-suyu github：https://github.com/suyu-emu/suyu
+~~已过时：~~
+~~suyu github：https://github.com/suyu-emu/suyu~~
 
-sudachi github：https://github.com/sudachi-emu/sudachi
+~~sudachi github：https://github.com/sudachi-emu/sudachi~~
 
-Ryujinx github：https://github.com/Ryujinx/Ryujinx(不含移动版)
+~~Ryujinx github：https://github.com/Ryujinx/Ryujinx(不含移动版)~~
 
-Ryujinx系列：Ryujinx已停止开发
+~~Ryujinx系列：Ryujinx已停止开发~~
 
-suyu系列：suyu、sudachi已经停止了，目前还有torzu存在~~
+~~suyu系列：suyu、sudachi已经停止了，目前还有torzu存在~~
 
 ### torzu
 镜像：https://notabug.org/litucks/torzu 只是代码镜像可能会停用
